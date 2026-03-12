@@ -1,15 +1,15 @@
 ># Full Stack Tech Exam - Readme Template
 
-**Name:** [Your Name Here]
+**Name:** Kaden Trousale
 
 ## 🔗 Required Links
 
 | Component | Link | 
 |-----------|------|
-| **GitHub Repository** | [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name) | 
+| **GitHub Repository** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/blob/main/docs/README.md](Kaden-Trousdale-FullStackExam) | 
 | **GitHub Pages (docs/)** | [https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/) | 
 | **Dev Server (Render)** | [https://your-app-name-dev.onrender.com](https://your-app-name-dev.onrender.com) | 
-| **Production Server (GCP)** | [http://your.static.external.ip:3000](http://your.static.external.ip:3000) | 
+| **Production Server (GCP)** | [http://35.239.153.95](http://35.239.153.95) | 
 | **Issue** | [https://github.com/your-username/your-repo-name/issues/1](https://github.com/your-username/your-repo-name/issues/1) | 
 | **Pull Request** | [https://github.com/your-username/your-repo-name/pull/1](https://github.com/your-username/your-repo-name/pull/1) | 
 | **Milestone** | [https://github.com/your-username/your-repo-name/milestone/1](https://github.com/your-username/your-repo-name/milestone/1) | 
@@ -17,6 +17,12 @@
 | **ssh cmd to your gcp** | `ssh -i student-key bcumbie@your.static.external.ip` | 
 
 ---
+
+Failed to complete in alloted time:
+
+- Static IP established
+- Dependencies installed locally and on GCP
+- Ran into critical errors elsewhere
 
 # Full Stack Tech Exam Instructions
 
