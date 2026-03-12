@@ -27,5 +27,6 @@
   "directories": {
     "doc": "docs"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {}
 }

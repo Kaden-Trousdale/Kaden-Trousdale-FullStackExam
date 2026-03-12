@@ -1,4 +1,5 @@
 
+import 'dotenv/config';
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -99,6 +100,12 @@ app.get('/api/init-emoji', async (req, res) => {
 no code mods needed but this uses the PORT variable for PaaS deployments
 */ 
 //start the server. 
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
-})
+async function startServer() {
+  await client.connect();
+  console.log('Connected to MongoDB');
+  app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}`);
+  });
+}
+
+startServer().catch(console.error);
