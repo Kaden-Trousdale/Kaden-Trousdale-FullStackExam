@@ -1,3 +1,24 @@
+># Full Stack Tech Exam - Submission Template
+
+**Student Name:** [Your Name Here]
+
+## 🔗 Required Links
+
+| Component | Link | Status |
+|-----------|------|---------|
+| **GitHub Repository** | [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name) | ✅ |
+| **GitHub Pages (docs/)** | [https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/) | ✅ |
+| **Dev Server (Render)** | [https://your-app-name-dev.onrender.com](https://your-app-name-dev.onrender.com) | ✅ |
+| **Production Server (GCP)** | [http://your.static.external.ip:3000](http://your.static.external.ip:3000) | ✅ |
+| **Issue** | [https://github.com/your-username/your-repo-name/issues/1](https://github.com/your-username/your-repo-name/issues/1) | ✅ |  
+| **Pull Request** | [https://github.com/your-username/your-repo-name/pull/1](https://github.com/your-username/your-repo-name/pull/1) | ✅ |
+| **Milestone** | [https://github.com/your-username/your-repo-name/milestone/1](https://github.com/your-username/your-repo-name/milestone/1) | ✅ |
+| **Successful CI/CD Action** | [https://github.com/your-username/your-repo-name/actions/runs/your-run-id](https://github.com/your-username/your-repo-name/actions/runs/your-run-id) | ✅ |
+
+---
+
+# Full Stack Tech Exam Instructions
+
 >Starting with a given codebase (provided as a GitHub repository), 
 >configure and develop a full stack infrastructure and app. 
 
@@ -20,7 +41,8 @@
 - a `dom` element to receive a response from the server
 - upgrade the front end with `html` & `styles` to guide a user what is going on
 - for the server `app.mjs` ensure the correct packages are installed, imported, & available
-- environmental variables with a provided `mongodb` connection string (and a secret code, see code comment)
+- refactor the front end `html` from a `<form>` to use the `js fetch()`
+- environmental variables with a provided `mongodb` connection string 
 - endpoints (middlewares)
 	- input an emoji for a given username (no front end required, see code comments)
 	- serve a static `html` from `public/` (`get to slash`)
@@ -39,12 +61,16 @@
 - set up your `nginx` `reverse-proxy`
 - (test your app using a `node` cmd)
 - run your app with a production-grade process manager 
+- getting app errors, try `pm2 loggs -n 50`
+
 ###  6️⃣ set up `ci/cd` on the `main` branch
+- use a `.github/workflows/` `.yaml` file
 - ensure use of `Git Hub action` `env` `secrets` & `variables`
+- create a milestone called `full stack tech exam`
 - test `ci/cd` with an `issue` & `pull request` 
 	- ensure the two are linked
-	- label both with a `milestone` = `full stack tech exam`
+	- assign both the issue and pull request to the `full stack tech exam` milestone
 	- assign both to yourself 
 - include described links on your `readme` to 
-	- the `issue` `pull request` & successful `action`
-- 
+	- the `issue`, `pull request`, `milestone` & successful `action`
+
