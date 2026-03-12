@@ -3,11 +3,16 @@ import 'dotenv/config';
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { MongoClient, ServerApiVersion, ObjectId } from 'mongodb';
+import { MongoClient, ServerApiVersion } from 'mongodb';
 
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const uri = process.env.MONGO_URI;
+
+if (!uri) {
+  console.error('❌ MONGO_URI is not defined. Check your .env file.');
+  process.exit(1);
+}
 
 /*
 👇🏻 no mods needed, this starts on 3000 unless (like for render) your PaaS assigns you a port. It's a little cleaner.
@@ -23,7 +28,7 @@ const client = new MongoClient(uri, {
   }
 });
 
-const yourNameAndEmoji = { name: 'barry', emoji: '🐸' }; //don't use my frog. 
+const yourNameAndEmoji = { name: 'Kaden', emoji: '😐' }; //don't use my frog. 
 
 
 //app instantiations
@@ -109,3 +114,16 @@ async function startServer() {
 }
 
 startServer().catch(console.error);
+
+// Graceful shutdown for pm2 / Render
+process.on('SIGINT', async () => {
+  await client.close();
+  console.log('MongoDB connection closed.');
+  process.exit(0);
+});
+
+process.on('SIGTERM', async () => {
+  await client.close();
+  console.log('MongoDB connection closed.');
+  process.exit(0);
+});
