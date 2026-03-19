@@ -10,8 +10,8 @@
 | **GitHub Pages (docs/)** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/blob/main/docs/README.md](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/blob/main/docs/README.md) | 
 | **Dev Server (Render)** | [https://kaden-trousdale-fullstackexam.onrender.com](https://kaden-trousdale-fullstackexam.onrender.com) | 
 | **Production Server (GCP)** | [35.239.153.95](35.239.153.95) | 
-| **Issue** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1) | 
-| **Pull Request** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1]([https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1/)) | 
+| **Issue** | [ ]() | 
+| **Pull Request** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1)| 
 | **Milestone** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/milestone/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/milestone/1) | 
 | **Successful CI/CD Action** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/actions/runs/your-run-id](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/actions/runs/your-run-id) | 
 | **ssh cmd to your gcp** | `ssh -i student-key kaden@your.static.external.ip` | 
