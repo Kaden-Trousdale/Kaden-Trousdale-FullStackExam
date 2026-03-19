@@ -8,7 +8,7 @@
 |-----------|------|
 | **GitHub Repository** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam) | 
 | **GitHub Pages (docs/)** | [https://kaden-trousdale.github.io/Kaden-Trousdale-FullStackExam/](https://kaden-trousdale.github.io/Kaden-Trousdale-FullStackExam/) | 
-| **Dev Server (Render)** | [https://kaden-tech-exam-dev.onrender.com](https://kaden-tech-exam-dev.onrender.com) | 
+| **Dev Server (Render)** | [https://kaden-trousdale-fullstackexam.onrender.com](https://kaden-trousdale-fullstackexam.onrender.com) | 
 | **Production Server (GCP)** | [35.239.153.95](35.239.153.95) | 
 | **Issue** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1) | 
 | **Pull Request** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1]([https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1/)) | 
