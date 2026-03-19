@@ -69,7 +69,7 @@ jobs:
     - name: Build status
       run: |
         if [ "${{ needs.test.result }}" == "success" ]; then
-          echo "✅ Build passed!"
+          echo "Build passed!"
         else
-          echo "❌ Build failed!"
+          echo "Build failed!"
         fi
