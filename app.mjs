@@ -23,7 +23,7 @@ const client = new MongoClient(uri, {
   }
 });
 
-const yourNameAndEmoji = { name: 'barry', emoji: '🐸' }; //don't use my frog. 
+const yourNameAndEmoji = { name: 'Kaden', emoji: '😐' }; //don't use my frog. 
 
 
 //app instantiations

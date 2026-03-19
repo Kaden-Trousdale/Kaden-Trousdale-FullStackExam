@@ -1,23 +1,22 @@
 ># Full Stack Tech Exam - Readme Template
 
-**Name:** [Your Name Here]
+**Name:** Kaden Trousdale
 
 ## 🔗 Required Links
 
 | Component | Link | 
 |-----------|------|
-| **GitHub Repository** | [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name) | 
-| **GitHub Pages (docs/)** | [https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/) | 
-| **Dev Server (Render)** | [https://your-app-name-dev.onrender.com](https://your-app-name-dev.onrender.com) | 
+| **GitHub Repository** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam) | 
+| **GitHub Pages (docs/)** | [https://kaden-trousdale.github.io/Kaden-Trousdale-FullStackExam/](https://kaden-trousdale.github.io/Kaden-Trousdale-FullStackExam/) | 
+| **Dev Server (Render)** | [https://kaden-tech-exam-dev.onrender.com](https://kaden-tech-exam-dev.onrender.com) | 
 | **Production Server (GCP)** | [http://your.static.external.ip:3000](http://your.static.external.ip:3000) | 
-| **Issue** | [https://github.com/your-username/your-repo-name/issues/1](https://github.com/your-username/your-repo-name/issues/1) | 
-| **Pull Request** | [https://github.com/your-username/your-repo-name/pull/1](https://github.com/your-username/your-repo-name/pull/1) | 
-| **Milestone** | [https://github.com/your-username/your-repo-name/milestone/1](https://github.com/your-username/your-repo-name/milestone/1) | 
-| **Successful CI/CD Action** | [https://github.com/your-username/your-repo-name/actions/runs/your-run-id](https://github.com/your-username/your-repo-name/actions/runs/your-run-id) | 
-| **ssh cmd to your gcp** | `ssh -i student-key bcumbie@your.static.external.ip` | 
+| **Issue** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1) | 
+| **Pull Request** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1) | 
+| **Milestone** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/milestone/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/milestone/1) | 
+| **Successful CI/CD Action** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/actions/runs/your-run-id](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/actions/runs/your-run-id) | 
+| **ssh cmd to your gcp** | `ssh -i student-key kaden@your.static.external.ip` | 
 
----
-
+---git 
 # Full Stack Tech Exam Instructions
 
 >Starting with a given codebase (provided as a GitHub repository), 
@@ -80,4 +79,4 @@
 	- the `issue`, `pull request`, `milestone` & successful `action`
 
 ## Submission
-- a link to your repository. 
+- a link to your repository.
