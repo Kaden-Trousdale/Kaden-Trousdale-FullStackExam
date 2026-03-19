@@ -11,7 +11,7 @@
 | **Dev Server (Render)** | [https://kaden-tech-exam-dev.onrender.com](https://kaden-tech-exam-dev.onrender.com) | 
 | **Production Server (GCP)** | [http://your.static.external.ip:3000](http://your.static.external.ip:3000) | 
 | **Issue** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1) | 
-| **Pull Request** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1) | 
+| **Pull Request** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1]([https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/pull/1/)) | 
 | **Milestone** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/milestone/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/milestone/1) | 
 | **Successful CI/CD Action** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/actions/runs/your-run-id](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/actions/runs/your-run-id) | 
 | **ssh cmd to your gcp** | `ssh -i student-key kaden@your.static.external.ip` | 
