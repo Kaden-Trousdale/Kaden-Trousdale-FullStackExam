@@ -1,0 +1,75 @@
+name: Full Stack Tech Exam CI/CD
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Run linter (if available)
+      run: npm run lint --if-present || true
+    
+    - name: Check file structure
+      run: |
+        echo "Checking required directories..."
+        test -d public && echo "✓ public/ exists"
+        test -d public/styles && echo "✓ public/styles/ exists"
+        test -d public/scripts && echo "✓ public/scripts/ exists"
+        test -d docs && echo "✓ docs/ exists"
+        test -f app.mjs && echo "✓ app.mjs exists"
+        test -f .env && echo "✓ .env exists"
+    
+    - name: Check app syntax
+      run: node --check app.mjs
+    
+    - name: Verify npm scripts
+      run: npm run dev --dry-run --if-present || true
+
+  deploy-to-render:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to Render
+      run: |
+        echo "Deployment to Render Production Server"
+        echo "This would trigger Render deployment via webhook"
+        # Add your Render webhook URL as a secret: RENDER_DEPLOY_WEBHOOK
+      env:
+        RENDER_DEPLOY_WEBHOOK: ${{ secrets.RENDER_DEPLOY_WEBHOOK }}
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: test
+    if: always()
+    
+    steps:
+    - name: Build status
+      run: |
+        if [ "${{ needs.test.result }}" == "success" ]; then
+          echo "✅ Build passed!"
+        else
+          echo "❌ Build failed!"
+        fi

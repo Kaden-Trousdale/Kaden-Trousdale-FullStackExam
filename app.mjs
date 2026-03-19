@@ -1,18 +1,12 @@
 
-import 'dotenv/config';
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { MongoClient, ServerApiVersion } from 'mongodb';
+import { MongoClient, ServerApiVersion, ObjectId } from 'mongodb';
 
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const uri = process.env.MONGO_URI;
-
-if (!uri) {
-  console.error('❌ MONGO_URI is not defined. Check your .env file.');
-  process.exit(1);
-}
 
 /*
 👇🏻 no mods needed, this starts on 3000 unless (like for render) your PaaS assigns you a port. It's a little cleaner.
@@ -105,25 +99,6 @@ app.get('/api/init-emoji', async (req, res) => {
 no code mods needed but this uses the PORT variable for PaaS deployments
 */ 
 //start the server. 
-async function startServer() {
-  await client.connect();
-  console.log('Connected to MongoDB');
-  app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`);
-  });
-}
-
-startServer().catch(console.error);
-
-// Graceful shutdown for pm2 / Render
-process.on('SIGINT', async () => {
-  await client.close();
-  console.log('MongoDB connection closed.');
-  process.exit(0);
-});
-
-process.on('SIGTERM', async () => {
-  await client.close();
-  console.log('MongoDB connection closed.');
-  process.exit(0);
-});
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${PORT}`)
+})
