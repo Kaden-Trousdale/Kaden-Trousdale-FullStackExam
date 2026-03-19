@@ -7,7 +7,7 @@
 | Component | Link | 
 |-----------|------|
 | **GitHub Repository** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam) | 
-| **GitHub Pages (docs/)** | [https://kaden-trousdale.github.io/Kaden-Trousdale-FullStackExam/](https://kaden-trousdale.github.io/Kaden-Trousdale-FullStackExam/) | 
+| **GitHub Pages (docs/)** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/blob/main/docs/README.md](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/blob/main/docs/README.md) | 
 | **Dev Server (Render)** | [https://kaden-trousdale-fullstackexam.onrender.com](https://kaden-trousdale-fullstackexam.onrender.com) | 
 | **Production Server (GCP)** | [35.239.153.95](35.239.153.95) | 
 | **Issue** | [https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1](https://github.com/Kaden-Trousdale/Kaden-Trousdale-FullStackExam/issues/1) | 
